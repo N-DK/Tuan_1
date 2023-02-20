@@ -7,9 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 600;
+    }
 
+    .orange {
+        background-color: orange;
+    }
+
+    .yellow {
+        background-color: yellow;
+    }
+
+</style>
 <body>
+    <table border="1" cellspacing="0" cellpadding="5" style="width: 500px; height: 400px;">
+        <tr>
+            <td>1</td>
+            <td colspan="3">2</td>
+        </tr>
+        <tr>
+            <td rowspan="3">3</td>
+            <td class="orange">4</td>
+            <td class="orange">5</td>
+            <td class="yellow" rowspan="2">6</td>
+        </tr>
+        <tr>
+            <td class="orange">7</td>
+            <td class="orange">8</td>
+        </tr>
+        <tr>
+            <td class="yellow" colspan="2">9</td>
+            <td class="yellow" >10</td>
+        </tr>
+    </table>
+    <div style="background-color: bisque; display: inline-block;">
 
+        <table border="1" cellspacing="0" cellpadding="5" style="width: auto; height: auto; margin-top: 24px;">
+            <caption>NUMBER 1-5 in VARIOUS LANGUAGES</caption>
+            <tr>
+                <td></td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
