@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 800px;
+            background-color: rgba(255, 166, 0, 0.512);
+            margin: 0 auto;
+            padding: 8px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin: 4px 0;
+            margin-top:12px;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Survey Form</h1>
+        <p style="text-align: justify;">If you are interested in purchasing one or more of our product, before ordering please complete some or all of the following survey for our marketing department. Answering any question is optional, and all information will be kept strictly confidential. Thank you very much for your time!</p>
+        <ol>
+            <li>
+                <p>What is your name</p>
+                <input type="text" name="name" id="name">
+            </li>
+            <li>
+                <p>What is your date of birth?</p>
+                <label for="month">Month: </label>
+                <select name="month" id="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="month">December</option>
+                </select>
+                <label for="day">Date: </label>
+                <select name="day" id="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <label for="year">Year: </label>
+                <input type="text" name="year" id="year">
+            </li>
+            <li>
+                <p>What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</p>
+                <textarea name="mailing" id="" cols="50" rows="5">
+                </textarea>
+            </li>
+            <li>
+                <p>What is your email address</p>
+                <input type="email" name="email" id="email">
+            </li>
+            <li>
+                <p>Have you viewed our online product catalog</p>
+                <input type="radio" name="check" id="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="check" id="no">
+                <label for="no">No</label>
+            </li>
+            <li>
+                <p>If so, what product(s), beside the one you are ordering, might you be interested in purchase in the future? (check all that apply.)</p>
+                <input type="checkbox" name="product" id="vcr" value="vcr">
+                <label for="vcr">VCR</label><br>
+                <input type="checkbox" name="product" id="tv" value="tv">
+                <label for="tv">Big Screen TV</label><br>
+                <input type="checkbox" name="product" id="audio" value="audio">
+                <label for="audio">Audio equipment</label><br>
+                <input type="checkbox" name="product" id="video" value="video">
+                <label for="video">Video Equipment</label><br>
+                <input type="checkbox" name="product" id="camera" value="camera">
+                <label for="camera">Camera Equipment</label><br>
+                <input type="checkbox" name="product" id="vcr" value="vcr">
+                <label for="vcr">Other
+                    <input type="text" name="productOther" id="other" value="Please List">
+                </label><br>
+            </li>
+            <li>
+                <p>Do you have any quetion, comments or suggestions before proceeding to the Order Form?</p>
+                <textarea name="" id="" cols="30" rows="10">Your Input:</textarea>
+            </li>
+        </ol>
+        <div>
+            <input type="submit" value="Send Form">
+            <input type="submit" value="Clear Form">
+        </div>
+    </form>
+</body>
+</html>
