@@ -6,29 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        form {
+        .form_1 {
             width: 800px;
             background-color: rgba(255, 166, 0, 0.512);
             margin: 0 auto;
             padding: 8px;
         }
         
-        h1 {
+        .form_1 h1 {
             text-align: center;
         }
 
-        p {
+        .form_1 p {
             margin: 4px 0;
             margin-top:12px;
         }
 
-        div {
+        .form_1 div {
             text-align: center;
         }
+
+        #form_2 {
+            width: 800px;
+            margin: 2px auto;
+        }
+
+        #form_2 .slider {
+            -webkit-appearance: none;
+            width: 150px;
+            height: 4px;
+            border-radius: none;
+            background-color: #d3d3d3;
+            outline:none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 10px;
+            height:20px;
+            border: none;
+            background-color: #b6b6b6;
+        }
+
+        .range {
+            display:flex;
+            align-items: center;
+            margin-bottom:8px;
+        }
+
+        #form_2 input,
+        #form_2 select{
+            margin-bottom: 8px;
+        }
+
     </style>
 </head>
 <body>
-    <form action="">
+    <form class="form_1" action="">
         <h1>Survey Form</h1>
         <p style="text-align: justify;">If you are interested in purchasing one or more of our product, before ordering please complete some or all of the following survey for our marketing department. Answering any question is optional, and all information will be kept strictly confidential. Thank you very much for your time!</p>
         <ol>
@@ -132,6 +167,46 @@
             <input type="submit" value="Send Form">
             <input type="submit" value="Clear Form">
         </div>
+    </form>
+    <form id="form_2" action="">
+        <label for="browser">Broswer: </label>
+        <select style="width: 160px;" name="browser" id="browser">
+            <option value=""></option>
+        </select><br>
+        <label for="userName">Username: </label>
+        <input type="text" name="userName" id="userName"><br>
+        <label for="encry">Encryption: </label>
+        <select name="encryption" id="encry">
+            <option value="2048 (High Grade)">2048 (High Grade)</option>
+        </select><br>
+        <div class="range">
+            <span>0</span>
+            <input type="range" name="" id="" min="0" max="100" value="50" class="slider">
+            <span>100</span>
+        </div>
+        <input type="text" name="" id="" value="50"><br>
+        <label for="birth">Birthday:</label>
+        <input type="date" name="birth" id="birth"><br>
+        <label for="color">Select your favorite color: </label>
+        <input type="color" name="color" id="color" value="#ff0000"><br>
+        <label for="birthMothYear">Birthday (month and year):</label>
+        <input type="month" name="monthYear" id="birthMothYear"><br>
+        <label for="week">Select a week</label>
+        <input type="week" name="week" id="week"><br>
+        <label for="time">Select a time</label>
+        <input type="time" name="time" id="time"><br>
+        <label for="birthDateTime">Birthday (date and time):</label>
+        <input type="datetime" name="dateTime" id="birthDateTime"><br>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="search">Search</label>
+        <input type="search" name="search" id="search"><br>
+        <label for="tel">Telephone</label>
+        <input type="tel" name="tel" id="tel"><br>
+        <label for="url">Add your homepage</label>
+        <input type="url" name="url" id="url"><br>
+        <input type="submit" value="Submit">
+        <p><b>Note: </b>The datalist tag is not supported in Safari or IE9 (and earlier).</p>
     </form>
 </body>
 </html>
