@@ -9,6 +9,11 @@
         p {
             margin: 4px 0;
         }
+
+        label {
+            display: inline-block;
+            margin: 4px 0;
+        }
     </style>
 </head>
 <body>
@@ -16,16 +21,16 @@
         <h1>Travel reservation form</h1>
         <h2>* denotes mandotory</h2>
         <label for="fname">Full name*:</label><br>
-        <input type="text" name="fname" id="fname" placeholder="FirstName LastName">
-        <p>Email address*:</p>
-        <input type="email" name="email" id="email" placeholder="EMAIL_ADDRESS">
-        <p>Select Tour Package</p>
+        <input type="text" name="fname" id="fname" placeholder="FirstName LastName"><br>
+        <label for="email">Email address*:</label><br>
+        <input type="email" name="email" id="email" placeholder="EMAIL_ADDRESS"><br>
+        <label for="select">Select Tour Package</label><br>
         <select name="select" id="select">
             <option value="">Goa</option>
-        </select>
-        <p>Arrival date*:</p> 
-        <input type="date" name="date" id="date">
-        <p>Number of person</p>
+        </select><br>
+        <label for="date">Arrival date*:</label> <br>
+        <input type="date" name="date" id="date"> <br>
+        <label for="number">Number of person</label> <br>
         <input type="text" name="number" id="number" placeholder="UNKNOWN_TYPE">
         <p>What would you want to avail*</p>
         <label for="first">Boarding</label>
@@ -34,7 +39,7 @@
         <input type="checkbox" name="avail" id="second"><br>
         <label for="third">Sight sceing</label>
         <input type="checkbox" name="avail" id="third"><br>
-        <p>Discout Coupon code: </p>
+        <label for="code">Discout Coupon code: </label> <br>
         <input type="text" name="code" id="code" placeholder="UNKNOWN_TYPE">
         <p>Terms and conditions*</p>
         <input type="radio" name="check" id="agree">
